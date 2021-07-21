@@ -1,0 +1,16 @@
+[
+  {
+    "id": "469f9800-c45a-483f-b13e-bd24f3fb79f4",
+    "title": "Home",
+    "shape": "Circle",
+    "name": "Home Star",
+    "fillColor": "#1a4a5a4d",
+    "strokeColor": "#eaa023",
+    "lineWidth": ".5",
+    "coords": [
+      128, 
+      105, 
+      25
+    ]
+  }
+]
