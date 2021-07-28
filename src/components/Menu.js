@@ -1,22 +1,22 @@
 import React from 'react'
 
-function Beers(props) {
+function Menu(props) {
 
     let toggleBeer = props.toggleBeer
     let setToggleBeer = props.setToggleBeer
 
     let beers = () => props.beers.map(beer => {
         return (
-            <div className="beer-item" data-aos="fade-up-right" data-aos-duration="800" data-aos="fade-up-right" data-aos-duration="800">
+            <div className="beer-item" data-aos="fade-up-right" data-aos-duration="800">
                                 <div className="beer-item-title">
-                                    <p>
+                                    <p className="beer-style-abv">
                                     {beer.style}
                                     <br />
                                     <hr className="lines" />
                                     {beer.alcohol} ABV
                                     </p>
                                     <img src="https://i.imgur.com/e1wPUir.jpg" alt="menu item thumbnail" />
-                                    <h3>{beer.name}</h3>
+                                    <h3 className="beer-name">{beer.name}</h3>
                                 </div>
                                 <div className="beer-item-price">
                                     <p>$4.50</p>
@@ -27,10 +27,13 @@ function Beers(props) {
 
     let foods = () => props.foods.map(food => {
         return (
-            <div className="beer-item" data-aos="fade-up-right" data-aos-duration="800" data-aos="fade-up-right" data-aos-duration="800">
+            <div className="beer-item" data-aos="fade-up-right" data-aos-duration="800" >
                                 <div className="beer-item-title">
                                     <img src="https://i.imgur.com/ZgWrueP.jpg" alt="menu item thumbnail" />
-                                    <h3>{food.dish}</h3>
+                                    <h3 className="food-name">{food.dish}</h3>
+                                </div>
+                                <div>
+                                    <p className="food-description">{food.description}</p>
                                 </div>
                                 <div className="beer-item-price">
                                     $4.50
@@ -97,4 +100,4 @@ function Beers(props) {
     )
 }
 
-export default Beers
+export default Menu

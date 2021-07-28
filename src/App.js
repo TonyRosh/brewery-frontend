@@ -1,15 +1,18 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 
+import { BrowserRouter as Route, Router } from 'react-router-dom';
+
 import AreYou21 from './components/AreYou21'
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import ScrollBar from './components/ScrollBar';
-import Beers from './components/Beers';
+import Menu from './components/Menu';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import LoginSignup from './components/LoginSignup';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -40,52 +43,38 @@ function App() {
 
   const [visible, setVisible] = useState(false)
 
-
-
-  window.addEventListener("load", function () {
-
-    Aos.init();
-
-  });
-
-  // const scrollBar = window.addEventListener("load", function () {
-
-  //   Aos.init();
-
-  //   const progress1 = document.getElementById('progressbar');
-  //   const totalHeight = document.body.scrollHeight - window.innerHeight;
-
-  //   window.onscroll = () => {
-
-  //     const progressHeight = (window.pageYOffset / totalHeight) * 110;
-  //     progress1.style.height = progressHeight + "%";
-  //     setVisible(true);
-
-  //     // let line1 = document.getElementById('line-1');
-  //     // let line2 = document.getElementById('line-2');
-  //     // let pos = window.scrollY - 2000;
-  //     // line1.style.left = `${pos}rem`
-  //     // line2.style.right = `${pos}rem`
-  
-  //   };
-  // })
-
-
-  // window.addEventListener("load", function () {
-
-  //   // this.document.querySelector(".page-loader").classList.add("fade-out");
-  //   // this.setTimeout(function(){
-  //   //   this.document.querySelector(".page-loader").style.display="none";
-  //   // },600);
-
-  // })
+  Aos.init();
 
   const [areYou21, setAreYou21] = useState(false)
+
+  const [toggleHomeStar, setToggleHomeStar] = useState(false)
+  const [toggleAboutStar, setToggleAboutStar] = useState(false)
+  const [toggleBeersStar, setToggleBeersStar] = useState(false)
+  const [toggleFoodStar, setToggleFoodStar] = useState(false)
+  const [toggleTeamStar, setToggleTeamStar] = useState(false)
+  const [toggleFeedbackStar, setToggleFeedbackStar] = useState(false)
+  const [toggleContactStar, setToggleContactStar] = useState(false)
+
+  const [windowHeight, setWindowHeight] = useState(0)
+
+  const [progressHeight, setProgressHeight] = useState(0)
+    
+
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+    let scroll = window.onscroll = () => {
+
+        setWindowHeight(window.pageYOffset);
+        setProgressHeight((window.pageYOffset / totalHeight) * 100);
+        setVisible(true);
+    };
 
   return (
 
 
-    <div className="App">
+    <Router>
+    <div className="App" >
+
 
 
     { areYou21 === true
@@ -94,15 +83,62 @@ function App() {
 
     <div>
 
-      <ScrollBar visible={ visible } setVisible={ setVisible } />
-      <Header toggleBeer={ toggleBeer } setToggleBeer={ setToggleBeer }/>
-      <Home toggleBeer={ toggleBeer } setToggleBeer={ setToggleBeer } />
+
+      <Route exact path="/login-signup" render={(routerprops) => <LoginSignup key="login" /> } />
+
+
+      <ScrollBar
+        visible={ visible } 
+        setVisible={ setVisible }
+        scroll={ scroll }
+        progressHeight={ progressHeight }
+        setProgressHeight={ setProgressHeight }
+      />
+
+      <Header 
+        toggleBeer={ toggleBeer } 
+        setToggleBeer={ setToggleBeer }
+        scroll={ scroll }
+        windowHeight={ windowHeight }
+        setWindowHeight={ setWindowHeight }
+      />
+
+      <Home 
+        toggleBeer={ toggleBeer } 
+        setToggleBeer={ setToggleBeer } 
+        toggleHomeStar={ toggleHomeStar }
+        setToggleHomeStar={ setToggleHomeStar }
+        toggleAboutStar={ toggleAboutStar }
+        setToggleAboutStar={ setToggleAboutStar }
+        toggleBeersStar={ toggleBeersStar }
+        setToggleBeersStar={ setToggleBeersStar }
+        toggleFoodStar={ toggleFoodStar }
+        setToggleFoodStar={ setToggleFoodStar }
+        toggleTeamStar={ toggleTeamStar }
+        setToggleTeamStar={ setToggleTeamStar }
+        toggleFeedbackStar={ toggleFeedbackStar }
+        setToggleFeedbackStar={ setToggleFeedbackStar }
+        toggleContactStar={ toggleContactStar }
+        setToggleContactStar={ setToggleContactStar }
+      />
+
       <About />
-      <Beers toggleBeer={ toggleBeer } setToggleBeer={ setToggleBeer } beers={ beers } foods={ foods } />
+
+      <Menu 
+        toggleBeer={ toggleBeer } 
+        setToggleBeer={ setToggleBeer } 
+        beers={ beers } 
+        foods={ foods } 
+      />
+
       <Reviews />
+
       <Team />
+
       <Footer />
-    </div >
+
+
+    </div>
 
     :
 
@@ -113,6 +149,7 @@ function App() {
     }
 
       </div>
+      </Router>
       
 
   );

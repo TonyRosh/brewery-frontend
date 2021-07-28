@@ -25,9 +25,9 @@ function Footer() {
                             <p data-aos="fade-up" data-aos-duration="1000">970-173-8153</p>
                             <p data-aos="fade-up" data-aos-duration="1200">SkyBearBrewery@gmail.com</p>
                             <div className="social-links" data-aos="fade-up" data-aos-duration="1300">
-                                <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                                <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                                <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a href="#contact"><FontAwesomeIcon icon={faFacebookF} /></a>
+                                <a href="#contact"><FontAwesomeIcon icon={faInstagram} /></a>
+                                <a href="#contact"><FontAwesomeIcon icon={faTwitter} /></a>
                             </div>
                         </div>
                     </div>
