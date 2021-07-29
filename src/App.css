@@ -48,7 +48,7 @@
   right: 0;
   width: 1.25rem;
   height: 100%;
-  background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+  background: url('https://i.imgur.com/tz7oKXo.jpg?2');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10000000;
@@ -77,7 +77,7 @@
   left: 0;
   width: 100%;
   height: -100%;
-  background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+  background: url('https://i.imgur.com/tz7oKXo.jpg?2');
   background-repeat: no-repeat;
   border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -90,7 +90,7 @@
   left: 0;
   width: 100%;
   height: -100%;
-  background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+  background: url('https://i.imgur.com/tz7oKXo.jpg?2');
   background-repeat: no-repeat;
   border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -360,32 +360,22 @@ section {
 
 
 
-/* page load */
+/* login signup form */
 
-.page-loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--dark);
-  z-index: 999;
-  transition: all 0.75s ease;
+.login-signup-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  background-image: url('https://i.imgur.com/wikpxxs.jpg?1');
+  background-size: contain;
 }
 
-.page-loader.fade-out {
-  opacity: 0;
-}
-
-.page-loader::before {
-  content: '';
+#home-button {
   position: absolute;
-  height: 0.25rem;
-  width: 6.25rem;
-  background-color: var(--main-color);
-  left: calc(50% - 3.125rem);
-  top: calc(50% - 0.125rem);
-  animation: pageLoader 1s linear infinite;
+  top: 1rem;
+  left: 1rem;
 }
 
 
@@ -629,11 +619,9 @@ section {
 } */
 
 .home-section img {
-  position: fixed;
+  position: absolute;
   animation: zoomIn 3s ease-in-out;
-  /* margin-bottom: 9rem; */
-  z-index: -1;
-  top: -2.5rem;
+  margin-bottom: 9rem;
 }
 
 .home-section .min-vh-100 {
@@ -643,19 +631,20 @@ section {
 }
 
 .starmap {
-  position: fixed;
+  position: absolute;
   width: 720px;
   height: 480px;
   z-index: -1;
 }
 
-.starnav-home, .starnav-about, .starnav-beer, .starnav-food, .starnav-team, .starnav-feedback, .starnav-contact {
+.starnav-login-signup, .starnav-about, .starnav-beer, .starnav-food, .starnav-team, .starnav-feedback, .starnav-contact {
   animation: zoomInWords 5s ease-in-out;
   font-family: var(--italic-font);
   opacity: 0.85;
   z-index: -1;
   opacity: 0.69;
   transform: scale(0.95);
+  cursor: pointer;
 }
 
 .big-dipper {
@@ -663,9 +652,14 @@ section {
   height: 45rem;
 }
 
-#star-nav-home, #star-nav-about, #star-nav-beer, #star-nav-food, #star-nav-team, #star-nav-feedback, #star-nav-contact {
+#star-nav-login-signup, #star-nav-about, #star-nav-beer, #star-nav-food, #star-nav-team, #star-nav-feedback, #star-nav-contact {
   opacity: 1;
   transform: scale(1);
+  cursor: pointer;
+}
+
+.star {
+  cursor: pointer;
 }
 
 
@@ -1151,7 +1145,7 @@ hr.lines {
     right: 0;
     height: 100vh;
     width: 1.25rem;
-    background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+    background: url('https://i.imgur.com/tz7oKXo.jpg?2');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 10000;
@@ -1217,7 +1211,7 @@ hr.lines {
     right: 0;
     height: 100vh;
     width: 1.25rem;
-    background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+    background: url('https://i.imgur.com/tz7oKXo.jpg?2');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 10000;
@@ -1249,7 +1243,7 @@ hr.lines {
     right: 0;
     height: 100%;
     width: 1.25rem;
-    background: url("https://i.imgur.com/tz7oKXo.jpg?2");
+    background: url('https://i.imgur.com/tz7oKXo.jpg?2');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -1811,7 +1805,7 @@ border-radius: 50%;
 -moz-box-shadow: inset 0 1.25rem 1.875rem rgba(255, 255, 255, 0.3);
 box-shadow: inset 0 1.25rem 1.875rem rgba(255, 255, 255, 0.3);
 
-content: "";
+content: '';
   height: 11.25rem;
 left: 0.625rem;
 position: absolute;
@@ -1862,7 +1856,7 @@ border-radius: 50%;
 -moz-box-shadow: inset 0 1.25rem 1.875rem rgba(255, 255, 255, 0.3);
 box-shadow: inset 0 1.25rem 1.875rem rgba(255, 255, 255, 0.3);
 
-content: "";
+content: '';
   height: 11.25rem;
 left: 0.625rem;
 position: absolute;

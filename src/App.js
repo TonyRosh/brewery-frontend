@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 
-import { BrowserRouter as Route, Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import AreYou21 from './components/AreYou21'
 import Header from './components/Header';
@@ -12,7 +12,7 @@ import Menu from './components/Menu';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
 import Footer from './components/Footer';
-import LoginSignup from './components/LoginSignup';
+import LoginSignup from './components/LoginSignup'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -47,7 +47,7 @@ function App() {
 
   const [areYou21, setAreYou21] = useState(false)
 
-  const [toggleHomeStar, setToggleHomeStar] = useState(false)
+  const [toggleLoginSignupStar, setToggleLoginSignupStar] = useState(false)
   const [toggleAboutStar, setToggleAboutStar] = useState(false)
   const [toggleBeersStar, setToggleBeersStar] = useState(false)
   const [toggleFoodStar, setToggleFoodStar] = useState(false)
@@ -72,8 +72,7 @@ function App() {
   return (
 
 
-    <Router>
-    <div className="App" >
+    <div className='App' >
 
 
 
@@ -83,10 +82,6 @@ function App() {
 
     <div>
 
-
-      <Route exact path="/login-signup" render={(routerprops) => <LoginSignup key="login" /> } />
-
-
       <ScrollBar
         visible={ visible } 
         setVisible={ setVisible }
@@ -94,6 +89,7 @@ function App() {
         progressHeight={ progressHeight }
         setProgressHeight={ setProgressHeight }
       />
+
 
       <Header 
         toggleBeer={ toggleBeer } 
@@ -103,11 +99,11 @@ function App() {
         setWindowHeight={ setWindowHeight }
       />
 
-      <Home 
+        <Route exact path='/' render={(routerProps) => <Home {...routerProps}
         toggleBeer={ toggleBeer } 
         setToggleBeer={ setToggleBeer } 
-        toggleHomeStar={ toggleHomeStar }
-        setToggleHomeStar={ setToggleHomeStar }
+        toggleLoginSignupStar={ toggleLoginSignupStar }
+        setToggleLoginSignupStar={ setToggleLoginSignupStar }
         toggleAboutStar={ toggleAboutStar }
         setToggleAboutStar={ setToggleAboutStar }
         toggleBeersStar={ toggleBeersStar }
@@ -120,7 +116,10 @@ function App() {
         setToggleFeedbackStar={ setToggleFeedbackStar }
         toggleContactStar={ toggleContactStar }
         setToggleContactStar={ setToggleContactStar }
+      />}
       />
+      
+      <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} /> } />
 
       <About />
 
@@ -149,7 +148,6 @@ function App() {
     }
 
       </div>
-      </Router>
       
 
   );
