@@ -1,13 +1,21 @@
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBeer } from '@fortawesome/free-solid-svg-icons'
+
 function Menu(props) {
 
     let toggleBeer = props.toggleBeer
     let setToggleBeer = props.setToggleBeer
 
     let beers = () => props.beers.map(beer => {
+
+        const goToBeer = event => {
+            props.history.push(`/${beer.name}`)
+        }
+
         return (
-            <div className='beer-item' data-aos='fade-up-right' data-aos-duration='800'>
+            <div className='beer-item' data-aos='fade-up-right' data-aos-duration='800' onClick={goToBeer} >
                                 <div className='beer-item-title'>
                                     <p className='beer-style-abv'>
                                     {beer.style}
@@ -17,10 +25,17 @@ function Menu(props) {
                                     </p>
                                     <img src='https://i.imgur.com/e1wPUir.jpg' alt='menu item thumbnail' />
                                     <h3 className='beer-name'>{beer.name}</h3>
-                                </div>
-                                <div className='beer-item-price'>
+                                <div className='beer-item-price-big-screen'>
                                     <p>$4.50</p>
                                 </div>
+                                </div>
+                                <div className='beer-item-price-small-screen'>
+                                    <p>$4.50</p>
+                                </div>
+                                <p className='rating'>Rating:
+                                    <br />
+                                    5/5 <FontAwesomeIcon icon={faBeer} className='happy-hour-icon' />
+                                </p>
                             </div>
         )
     })
@@ -36,7 +51,7 @@ function Menu(props) {
                                     <p className='food-description'>{food.description}</p>
                                 </div>
                                 <div className='beer-item-price'>
-                                    $4.50
+                                    <p>$4.50</p>
                                 </div>
                             </div>
         )

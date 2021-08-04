@@ -13,7 +13,6 @@ import Reviews from './components/HappyHour';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import LoginSignup from './components/LoginSignup'
-import UserHome from './UserHome'
 
 import BlackBear from './beers/BlackBear'
 import BlackFox from './beers/BlackFox'
@@ -79,8 +78,9 @@ function App() {
     <div className='App' >
 
 
+
+    <div>
       <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} /> } />
-      <Route path='/welcome-back' render={(routerProps) => <UserHome {...routerProps} /> } />
       <Route path='/Black Bear' render={(routerProps) => <BlackBear {...routerProps} /> } />
       <Route path='/Black Fox' render={(routerProps) => <BlackFox {...routerProps} /> } />
       <Route path='/Blonde Bear' render={(routerProps) => <BlondeBear {...routerProps} /> } />
@@ -89,12 +89,6 @@ function App() {
       <Route path='/Nuthatch Brown' render={(routerProps) => <Nuthatch {...routerProps} /> } />
       <Route path='/Red Fox' render={(routerProps) => <RedFox {...routerProps} /> } />
       <Route path='/Rattlesnake' render={(routerProps) => <Rattlesnake {...routerProps} /> } />
-
-    { areYou21 === true
-
-    ?
-
-    <Route exact path='/' render={(routerProps) => <div {...routerProps}>
 
       <ScrollBar
         visible={ visible } 
@@ -138,15 +132,7 @@ function App() {
       <Footer />
 
 
-    </div> } />
-
-    :
-
-    <div>
-      <AreYou21 areYou21={areYou21} setAreYou21={setAreYou21} />
     </div>
-
-    }
 
       </div>
       
