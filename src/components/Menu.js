@@ -32,10 +32,6 @@ function Menu(props) {
                                 <div className='beer-item-price-small-screen'>
                                     <p>$4.50</p>
                                 </div>
-                                <p className='rating'>Rating:
-                                    <br />
-                                    5/5 <FontAwesomeIcon icon={faBeer} className='happy-hour-icon' />
-                                </p>
                             </div>
         )
     })

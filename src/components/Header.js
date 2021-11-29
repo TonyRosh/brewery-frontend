@@ -27,7 +27,7 @@ function Header(props) {
             <header className='header sticky' style={{visibility: 'visible'}} >
                 <Navbar collapseOnSelect expand='lg' variant='dark'>
                     <Navbar.Brand href='#home'><div className='logo'>
-                        <a href='#home'><img src='https://i.imgur.com/g1PwnZq.png' alt='logo' height='50' width='50' /></a>
+                        <a href='#home'><img src='https://i.imgur.com/YItS43P.png' alt='logo' height='50' width='50' /></a>
                     </div>
                     </Navbar.Brand>
                     <div className='nav-toggle'>

@@ -207,7 +207,32 @@
 .btn-login:hover {
   color: var(--secondary-color) !important;
   background-color: var(--dark-light) !important;
-  border-color: var(--darker) !important;
+  border-color: var(--white-light) !important;
+}
+
+.btn-signup {
+  display: inline-block !important;
+  padding: 0.63rem 1.88rem !important;
+  background-color: transparent !important;
+  border-radius: 1.87rem !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  transition: all 0.3s ease !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+  color: var(--main-color) !important;
+  line-height: 1.5 !important;
+  user-select: none !important;
+  border: var(--white-dark) solid !important;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.btn-signup:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--dark-light) !important;
+  border-color: var(--white-light) !important;
 }
 
 .btn-leave-login {
@@ -217,7 +242,7 @@
 .btn-leave-login:hover {
   color: var(--secondary-color) !important;
   background-color: var(--darker) !important;
-  border-color: var(--main-color);
+  border-color: var(--secondary-color) !important;
 }
 
 
@@ -475,7 +500,8 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: var(--main-color) !important;
+  color: var(--secondary-color) !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .navbar-expand-lg {
@@ -492,7 +518,8 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: var(--white-light) !important;
+  color: var(--main-color) !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -574,9 +601,11 @@
   font-family: var(--italic-font);
   opacity: 0.85;
   z-index: -1;
-  opacity: 0.69;
+  opacity: 0.75;
   transform: scale(0.95);
   cursor: pointer;
+  /* color: var(--secondary-color); */
+  color: var(--white-light);
 }
 
 .big-dipper {
@@ -588,6 +617,7 @@
   opacity: 1;
   transform: scale(1);
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .star {
@@ -740,14 +770,22 @@
   font-size: 1.12rem;
   font-family: inherit;
   text-transform: capitalize;
-  border: none;
+  border: 0.125rem solid var(--main-color);
+  border-radius: 1rem;
   background-color: transparent;
   font-weight: 400;
   color: var(--white);
   cursor: pointer;
   margin: 0 0.62rem 0.62rem;
+  padding: .5rem;
   transition: color 0.3s ease;
   display: inline-block;
+}
+
+.beer-tab-item:hover {
+  color: var(--secondary-color);
+  background-color: var(--darker);
+  border-color: var(--secondary-color);
 }
 
 .beer-tab-item:focus {
@@ -844,6 +882,7 @@ hr.lines {
   font-weight: 400;
   color: var(--main-color);
   transition: color 0.3s ease;
+  padding-left: 1.5rem;
 }
 
 .beer-item:hover .beer-item-price-big-screen {
@@ -1099,6 +1138,35 @@ hr.lines {
 
 
 
+/* each individual beer */
+
+.black-bear {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://i.imgur.com/eFw5lWU.jpg);
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.beer-page-title {
+  padding-top: 5rem;
+}
+
+.beer-list {
+  color: var(--secondary-color);
+  font-family: var(--italic-font);
+}
+
+.black-bear-description {
+  padding: 2rem;
+}
+
+
+
+
+
 /* responsive */
 
 @media(max-width: 61.94rem){
@@ -1191,6 +1259,29 @@ hr.lines {
     position: absolute;
     left: 487px;
     top: 347px;
+  }
+
+  .black-bear {
+    height: 100vh;
+    width: 100vw;
+    background: url(https://i.imgur.com/eFw5lWU.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+
+  .beer-page-title {
+    padding-top: 5rem;
+  }
+
+  .black-bear-description {
+    padding: 1rem;
+  }
+  
+  .beer-list {
+    color: var(--secondary-color);
+    font-family: var(--italic-font);
   }
 
 }
@@ -1299,6 +1390,29 @@ hr.lines {
     position: absolute;
     left: 487px;
     top: 347px;
+  }
+
+  .black-bear {
+    height: 100vh;
+    width: 100vw;
+    background: url(https://i.imgur.com/eFw5lWU.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+  
+  .beer-page-title {
+    padding-top: 5rem;
+  }
+
+  .black-bear-description {
+    padding: 1rem;
+  }
+  
+  .beer-list {
+    color: var(--secondary-color);
+    font-family: var(--italic-font);
   }
 
 }
@@ -1425,6 +1539,29 @@ hr.lines {
     position: absolute;
     left: 408px;
     top: 277px;
+  }
+
+  .black-bear {
+    height: 100vh;
+    width: 100vw;
+    background: url(https://i.imgur.com/eFw5lWU.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+  
+  .beer-page-title {
+    padding-top: 5rem;
+  }
+
+  .black-bear-description {
+    padding: 1rem;
+  }
+  
+  .beer-list {
+    color: var(--secondary-color);
+    font-family: var(--italic-font);
   }
 
 }

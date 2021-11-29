@@ -107,7 +107,7 @@ function LoginSignup(props) {
                     />
                 </Form.Group>
             <br />
-            <input type='submit' value='signup' className='btn btn-default' />
+            <input type='submit' value='signup' className='btn btn-signup' />
             <br />
             <br />
             <button className='btn btn-login' onClick={setToggleSignup}>Already a member? Log in here!</button>
@@ -137,7 +137,7 @@ function LoginSignup(props) {
                     />
                 </Form.Group>
             <br />
-            <input type='submit' value='login' className='btn btn-default' />
+            <input type='submit' value='login' className='btn btn-login' />
             </Form>
 
         }

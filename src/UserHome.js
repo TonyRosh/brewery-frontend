@@ -3,9 +3,8 @@ import { useState, useEffect } from 'react';
 
 import { Route } from 'react-router-dom';
 
-import AreYou21 from './components/AreYou21'
 import Header from './components/Header';
-import Home from './components/Home';
+import LogInHome from './components/LogInHome';
 import About from './components/About';
 import ScrollBar from './components/ScrollBar';
 import Menu from './components/Menu';
@@ -53,10 +52,6 @@ function App() {
   const [visible, setVisible] = useState(false)
 
   Aos.init();
-
-  const [areYou21, setAreYou21] = useState(false)
-
-  
 
   const [windowHeight, setWindowHeight] = useState(0)
 
@@ -107,7 +102,7 @@ function App() {
         setWindowHeight={ setWindowHeight }
       />
 
-        <Route render={(routerProps) => <Home {...routerProps}
+        <Route render={(routerProps) => <LogInHome {...routerProps}
           toggleBeer={ toggleBeer } 
           setToggleBeer={ setToggleBeer }
         />}

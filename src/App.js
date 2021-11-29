@@ -36,13 +36,13 @@ function App() {
   const [foods, setFoods] = useState([]);
 
   const getBeers = () => {
-    fetch('http://localhost:3000/beers/')
+    fetch('https://skybear-brewery-backend.herokuapp.com/beers')
       .then(response => response.json())
       .then(apiBeers => setBeers(apiBeers))
   }
 
   const getFoods = () => {
-    fetch('http://localhost:3000/foods/')
+    fetch('https://skybear-brewery-backend.herokuapp.com/foods')
       .then(response => response.json())
       .then(apiFoods => setFoods(apiFoods))
   }
@@ -81,7 +81,7 @@ function App() {
 
       <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} /> } />
       <Route path='/welcome-back' render={(routerProps) => <UserHome {...routerProps} /> } />
-      <Route path='/Black Bear' render={(routerProps) => <BlackBear {...routerProps} /> } />
+      <Route path='/Black Bear' render={(routerProps) => <BlackBear {...routerProps} beers={ beers }/> } />
       <Route path='/Black Fox' render={(routerProps) => <BlackFox {...routerProps} /> } />
       <Route path='/Blonde Bear' render={(routerProps) => <BlondeBear {...routerProps} /> } />
       <Route path='/Bobcat Lager' render={(routerProps) => <Bobcat {...routerProps} /> } />
