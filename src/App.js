@@ -9,7 +9,7 @@ import Home from './components/Home';
 import About from './components/About';
 import ScrollBar from './components/ScrollBar';
 import Menu from './components/Menu';
-import Reviews from './components/HappyHour';
+import HappyHour from './components/HappyHour';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import LoginSignup from './components/LoginSignup'
@@ -131,7 +131,7 @@ function App() {
       />}
       />
 
-      <Reviews />
+      <HappyHour />
 
       <Team />
 

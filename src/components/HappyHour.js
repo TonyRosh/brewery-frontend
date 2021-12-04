@@ -14,16 +14,12 @@ function HappyHour() {
                         <div className='section-title'>
                             <h2 data-title='The best hour...' data-aos='fade-up' data-aos-duration='500' className="happy-hour-title">Happy Hour</h2>
                             <br/>
-                            <h5 className="happy-hour-hours">Mon-Thurs: 4-6PM</h5>
-                            <br/>
-                            <h5 className="happy-hour-hours">Friday and Saturday: 4-6pm | Weekend Late-night: 10pm-Close</h5>
-                            <br/>
-                            <h5 className="happy-hour-hours">Sunday: 5pm-Close</h5>
+                            <h5 className="happy-hour-hours">Tues-Thurs: 2pm-5PM</h5>
                         </div>
                     </div>
                     <div className='row'>
 
-                        <div className='happy-hour-item' data-aos='zoom-in' data-aos-duration='1000'>
+                        {/* <div className='happy-hour-item' data-aos='zoom-in' data-aos-duration='1000'>
                             <div className='happy-hour-author'>
                                 <div className='happy-hour-author-name'>
                                     <h2 className='happy-hour-title'>Thirsty?</h2>
@@ -40,9 +36,22 @@ function HappyHour() {
                             <br/><FontAwesomeIcon icon={faBeer} className='happy-hour-icon' /> $5 well drinks!
                             <br/>
                             <br/><FontAwesomeIcon icon={faBeer} className='happy-hour-icon' /> $10 beer flights!</p>
+                        </div> */}
+
+                        <div className='happy-hour-item' data-aos='zoom-in' data-aos-duration='1000'>
+                            <div className='happy-hour'>
+                                <div className='happy-hour-name'>
+                                    <h2 className='happy-hour-title'>Thirsty?</h2>
+                                </div>
+                                <div className='happy-hour-img'>
+                                    <img src='https://i.imgur.com/OfjH4VD.jpg' alt='happy-hour' />
+                                </div>
+                            </div>
+                            <br />
+                            <p><FontAwesomeIcon icon={faBeer} className='happy-hour-icon' /> All home brews are $2 off!</p>
                         </div>
 
-                        <div className='happy-hour-item' data-aos='zoom-in' data-aos-duration='1250'>
+                        {/* <div className='happy-hour-item' data-aos='zoom-in' data-aos-duration='1250'>
                             <div className='happy-hour-author'>
                                 <div className='happy-hour-author-name'>
                                     <h2>Hungry?</h2>
@@ -59,7 +68,7 @@ function HappyHour() {
                             <br/><FontAwesomeIcon icon={faBacon} className='happy-hour-icon' /> $2.50 Basket Of Fries!
                             <br/>
                             <br/><FontAwesomeIcon icon={faBacon} className='happy-hour-icon' /> Free Chips and Salsa on Request w/ Beer Purchase!</p>
-                        </div>
+                        </div> */}
 
                     </div>
 

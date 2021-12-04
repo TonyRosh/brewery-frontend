@@ -703,6 +703,11 @@
   z-index: -3;
 }
 
+.img-box {
+  position: absolute;
+  align-content: center;
+}
+
 .about-img .img-box {
   position: relative;
 }
@@ -922,10 +927,11 @@ hr.lines {
 .happy-hour-section .row {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .happy-hour-item {
-  width: calc((100% / 2) - 1.87rem);
+  width: 50%;
   margin: 0 0.94rem 1.87rem;
   border: 0.125rem solid var(--dark);
   padding: 1.87rem;
@@ -934,27 +940,27 @@ hr.lines {
   z-index: 3;
 }
 
-.happy-hour-author {
+.happy-hour {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.happy-hour-author h3 {
+.happy-hour h3 {
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0 0.19rem;
   color: var(--white);
 }
 
-.happy-hour-author span {
+.happy-hour span {
   display: block;
   font-size: 0.87rem;
   text-transform: capitalize;
   color: var(--main-color);
 }
 
-.happy-hour-author img {
+.happy-hour img {
   max-width: 7.75rem;
   border-radius: 0.5rem;
   border: 0.19rem solid var(--dark);
@@ -962,13 +968,14 @@ hr.lines {
   transition: border-color 0.5s ease;
 }
 
-.happy-hour-author:hover img {
+.happy-hour:hover img {
   border-color: var(--main-color);
 }
 
 .happy-hour-item p {
   margin: 0.94rem;
   font-family: var(--italic-font);
+  font-size: larger;
 }
 
 .happy-hour-icon {
@@ -1073,6 +1080,28 @@ hr.lines {
   z-index: -1;
 }
 
+.email {
+  text-decoration: none;
+  color: var(--white-light);
+}
+
+.email:hover {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: large;
+}
+
+.phone {
+  text-decoration: none;
+  color: var(--white-light);
+}
+
+.phone:hover {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: large;
+}
+
 .footer-item {
   width: calc(100% / 3);
   padding: 0 0.94rem;
@@ -1109,18 +1138,6 @@ hr.lines {
 .footer-item .social-links a:hover {
   color: var(--main-color);
   opacity: 1;
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 0.313rem 0 #aaa,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 0.313rem rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 0.313rem rgba(0,0,0,.2),
-  0 0.313rem 0.625rem rgba(0,0,0,.25),
-  0 0.625rem 0.625rem rgba(0,0,0,.2),
-  0 1.25rem 1.25rem rgba(0,0,0,.15);
   font-size: 1.5rem;
 }
 

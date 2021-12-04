@@ -12,18 +12,24 @@ function Footer() {
                     <div className='row'>
                         <div className='footer-item'>
                             <h3 data-aos='fade-up'>Our Location</h3>
-                            <p data-aos='fade-up' data-aos-duration='1000'>5413 Cherly St, Loveland, CO 80538</p>
+                            <p data-aos='fade-up' data-aos-duration='1000'>272 East 5th Street Loveland, CO 80537</p>
                         </div>
                         <div className='footer-item'>
                             <h3 data-aos='fade-up'>Our Hours</h3>
-                            <p data-aos='fade-up' data-aos-duration='1000'>Monday - Thursday <br /> Noon - 10pm</p>
-                            <p data-aos='fade-up' data-aos-duration='1200'>Friday and Saturday <br /> 11am - Midnight</p>
-                            <p data-aos='fade-up' data-aos-duration='1300'>Sunday <br /> Noon - 9pm</p>
+                            <p data-aos='fade-up' data-aos-duration='1000'>Monday:<br /> Closed</p>
+                            <p data-aos='fade-up' data-aos-duration='1000'>Tuesday - Thursday: <br /> 11am - 10pm</p>
+                            <p data-aos='fade-up' data-aos-duration='1200'>Friday and Saturday: <br /> 11am - 11pm</p>
+                            <p data-aos='fade-up' data-aos-duration='1300'>Sunday: <br /> 11am - 10pm</p>
                         </div>
                         <div className='footer-item'>
                             <h3 data-aos='fade-up'>Contact Us</h3>
-                            <p data-aos='fade-up' data-aos-duration='1000'>970-173-8153</p>
-                            <p data-aos='fade-up' data-aos-duration='1200'>SkyBearBrewery@gmail.com</p>
+                            <div className='phone-div' data-aos='fade-up' data-aos-duration='1000'>
+                            <a className='phone' href="tel:630-651-0224">(630) 651-0224</a>
+                            </div>
+                            <br />
+                            <div className='email-div' data-aos='fade-up' data-aos-duration='1200'>
+                            <a className='email' href="mailto:skybearbreweryandpub@gmail.com">Email Us!</a>
+                            </div>
                             <div className='social-links' data-aos='fade-up' data-aos-duration='1300'>
                                 <a href='#contact'><FontAwesomeIcon icon={faFacebookF} /></a>
                                 <a href='#contact'><FontAwesomeIcon icon={faInstagram} /></a>

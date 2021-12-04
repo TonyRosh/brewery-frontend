@@ -15,9 +15,18 @@ function About() {
                         <img src='https://i.imgur.com/5GhS1US.png' alt='logo'/>
                         <br/>
                         <br/>
-                            <p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'</p>
-
-                            <p >'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'</p>
+                            <p>Sky Bear Brewery & Pub is family owned and operated, run by daughter Amanda
+                                and her parents Mark and Linda. Amanda has over 10 years of experience in the
+                                restaurant industry and Mark has been brewing homebrew beer for his family and
+                                friends for close to a decade. Putting together the family’s love of enjoying beer
+                                and spirits together, Mark’s passion for brewing beer, Linda’s love for family and
+                                meeting new friends, and Amanda’s passion for hospitality we believe we can
+                                create a great experience for any guest who walks through the door.
+                                To date the beer has been brewed at Mark and Linda’s residence located on Sky
+                                Bear Trail in Colorado. With Amanda living in Loveland, we decided it was time to
+                                bring our delicious family beer to Loveland. We have found a turn of the century
+                                building downtown that we plan to preserve with Loveland’s history. We hope to
+                                see you soon, where we can extend a warm welcome from our family to you!</p>
                             <a href='#happy-hour' className='btn btn-default' data-aos='flip-down' data-aos-duration='1000'>Check Out Our Happy Hour!</a>
                         </div>
                         <div className='about-img' data-aos='fade-left'
