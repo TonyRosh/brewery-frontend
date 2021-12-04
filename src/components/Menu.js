@@ -66,7 +66,7 @@ function Menu(props) {
                         <div className='row' id='beers'>
                         <div className='section-title'>
                             <h2 data-title='Thirsty?' data-aos='fade-up' data-aos-duration='500'>Our Brews</h2>
-                                <p>Our decision to offer more than Mark’s homebrew craft beer is also derived from
+                                <p data-aos='fade-up' data-aos-duration='500'>Our decision to offer more than Mark’s homebrew craft beer is also derived from
                                 the Kissel Family. Often while visiting new cities, Mark, Amanda, and a few others
                                 would want to visit the local breweries, while the rest of the family would opt out
                                 due to not liking local craft brew. Mark, Linda, and Amanda knew they had to
@@ -97,7 +97,7 @@ function Menu(props) {
                         <div className='row' id='food'>
                         <div className='section-title'>
                             <h2 data-title='Hungry?' data-aos='fade-up' data-aos-duration='500'>Our Snacks</h2>
-                            <p>Our food menu is the perfect option for a quick bite for lunch, a meal with family
+                            <p data-aos='fade-up' data-aos-duration='500'>Our food menu is the perfect option for a quick bite for lunch, a meal with family
                                 or friends, or just the needed appetizer. The food is created in house by our staff.
                                 We offer the usual pub favorites and some unique twists on classic favorites.</p>
                         </div>
