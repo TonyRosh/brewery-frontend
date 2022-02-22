@@ -1489,13 +1489,19 @@ hr.lines {
   .beer-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .beer-item-title {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-between;
     align-items: center;
     max-width: calc(100% - 5rem);
+  }
+
+  .beer-item-title p {
+    margin: 0.5rem;
   }
 
   .beer-item img {

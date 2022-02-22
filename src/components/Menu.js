@@ -7,9 +7,9 @@ function Menu(props) {
     let toggleBeer = props.toggleBeer
     let setToggleBeer = props.setToggleBeer
 
-    let beers = () => props.beers.map((beer, props) => {
+    let beers = () => props.beers.map((beer) => {
 
-        const goToBeer = event => {
+        const goToBeer = (event) => {
             props.history.push(`/${beer.name}`)
         }
 
