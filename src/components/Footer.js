@@ -31,9 +31,8 @@ function Footer() {
                             <a className='email' href="mailto:skybearbreweryandpub@gmail.com">Email Us!</a>
                             </div>
                             <div className='social-links' data-aos='fade-up' data-aos-duration='1300'>
-                                <a href='#contact'><FontAwesomeIcon icon={faFacebookF} /></a>
-                                <a href='#contact'><FontAwesomeIcon icon={faInstagram} /></a>
-                                <a href='#contact'><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a href='https://www.facebook.com/Skybearbreweryandpub'><FontAwesomeIcon icon={faFacebookF} /></a>
+                                <a href='https://www.instagram.com/skybearbreweryandpub/'><FontAwesomeIcon icon={faInstagram} /></a>
                             </div>
                         </div>
                     </div>

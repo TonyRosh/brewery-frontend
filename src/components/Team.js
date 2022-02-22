@@ -13,29 +13,17 @@ function Team() {
                     </div>
                     <div className='row'>
 
+                        <div className='team-item'></div>
+
                         <div className='team-item' data-aos='flip-left' data-aos-duration='1000'>
-                            <img src='https://i.imgur.com/IQrhIuS.jpg' alt='brewer' />
+                            <img src='https://i.imgur.com/BNmBjea.jpg' alt='brewer' />
                             <div className='team-item-info'>
-                                <h3>Amandas Dad</h3>
-                                <p>The Mastermind Behind The Brews</p>
+                                <h3>The Kissel Family</h3>
+                                <p>We hope you enjoy your brews! <br /> - Mark, Linda, and Amanda.</p>
                             </div>
                         </div>
 
-                        <div className='team-item' data-aos='flip-left' data-aos-duration='1000'>
-                            <img src='https://i.imgur.com/FQx8hx2.jpg' alt='brewer' />
-                            <div className='team-item-info'>
-                                <h3>Amandas Mom</h3>
-                                <p>Motherly Figure & Manager</p>
-                            </div>
-                        </div>
-
-                        <div className='team-item' data-aos='flip-left' data-aos-duration='1000'>
-                            <img src='https://i.imgur.com/3VbANdO.jpg' alt='brewer' />
-                            <div className='team-item-info'>
-                                <h3>Amanda</h3>
-                                <p>Manager & Tony's First Client 🙏🏼</p>
-                            </div>
-                        </div>
+                        <div className='team-item'></div>
 
                     </div>
                 </div>

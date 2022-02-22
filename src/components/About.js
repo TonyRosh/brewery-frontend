@@ -1,4 +1,6 @@
 import React from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 function About() {
     return (
@@ -34,7 +36,49 @@ function About() {
                             data-aos-easing='ease-in-sine' data-aos-duration='500'>
                             <div class='img-box' >
                                 <h3>Proudly Brewing Coloardo Beer</h3>
-                                <img src='https://i.imgur.com/eRSqhAv.jpg' alt='beer in the mountains' />
+                                <Carousel autoPlay={true} 
+                                infiniteLoop={true}
+                                showArrows={false}
+                                showThumbs={false}
+                                interval={4000}
+                                showIndicators={false}
+                                useKeyboardArrows={true}
+                                >
+                <div>
+                <img src='https://i.imgur.com/oc5Z73E.png' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/fCPLYjI.jpg' alt='the brewery owners' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/AU0RiVr.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/Iaup3GX.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/xHAvi5A.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/T04rYU5.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/C4VyRUJ.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/hBdfm3r.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/axjZ9pn.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/dCtRZIj.jpg' alt='beer in the mountains' />
+                </div>
+                <div>
+                <img src='https://i.imgur.com/9okUG9U.jpg' alt='beer in the mountains' />
+                </div>
+            </Carousel>
+                                
                             </div>
                         </div>
                     </div>

@@ -715,12 +715,12 @@
 .about-img .img-box::before {
   content: '';
   position: absolute;
-  height: 6.25rem;
-  width: 6.25rem;
-  border: 0.19rem solid var(--main-color);
+  height: 6rem;
+  width: 6rem;
+  border: 0.19rem solid var(--dark-light);
   border-radius: 1.5rem;
-  left: calc(50% - 3.125rem);
-  top: calc(50% - 3.125rem);
+  right: calc(50% - 3.125rem);
+  bottom: .59rem;
   animation: spin01 10s linear infinite;
   z-index: 1;
   opacity: .5;
@@ -728,9 +728,9 @@
 
 .about-img .img-box h3 {
   position: absolute;
-  color: var(--dark-light);
+  color: var(--secondary-color);
   left: 50%;
-  top: 50%;
+  bottom: -1.75rem;
   width: 100%;
   max-width: 15.62rem;
   text-align: center;
@@ -808,10 +808,6 @@
 .beer-item {
   width: 50%;
   padding: 1.25rem 0.94rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
   z-index: 3;
   cursor: pointer;
 }
@@ -833,6 +829,7 @@
 .beer-item-title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: calc(100% - 5rem);
 }
 
@@ -849,7 +846,7 @@
   font-size: 1em;
   text-transform: capitalize;
   transition: color 0.3s ease;
-  margin: .5rem;
+  margin: .5rem 2.5rem .5rem 0;
 }
 
 .rating {
@@ -903,14 +900,14 @@ hr.lines {
   width: 12.69rem;
 }
 
-.food-description {
-  width: 18rem;
-  margin: 0.25rem;
-  font-family: var(--italic-font);
+.food-name {
+  width: 50%;
 }
 
-.food-name {
-  width: 6.25rem;
+.food-description {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
 }
 
 
@@ -1025,7 +1022,7 @@ hr.lines {
   left: 1.87rem;
   right: 1.87rem;
   bottom: 0;
-  transform: translateY(-165%);
+  transform: translateY(-303%);
   transition: all 0.4s ease;
   pointer-events: none;
   z-index: -1;
@@ -1436,6 +1433,11 @@ hr.lines {
 
 
 @media(max-width: 35.94rem){
+
+  .home-section {
+    height: 0rem;
+    width: 0rem;
+  }
 
   .header::before {
     content: '';
