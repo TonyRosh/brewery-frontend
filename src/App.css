@@ -596,7 +596,7 @@
   z-index: -1;
 }
 
-.starnav-login-signup, .starnav-about, .starnav-beer, .starnav-food, .starnav-team, .starnav-happy-hour, .starnav-contact {
+.starnav-cocktail, .starnav-about, .starnav-beer, .starnav-food, .starnav-team, .starnav-happy-hour, .starnav-contact {
   animation: zoomInWords 4.20s ease-in-out;
   font-family: var(--italic-font);
   opacity: 0.85;
@@ -613,7 +613,7 @@
   height: 45rem;
 }
 
-#star-nav-login-signup, #star-nav-about, #star-nav-beer, #star-nav-food, #star-nav-team, #star-nav-happy-hour, #star-nav-contact {
+#star-nav-cocktail, #star-nav-about, #star-nav-beer, #star-nav-food, #star-nav-team, #star-nav-happy-hour, #star-nav-contact {
   opacity: 1;
   transform: scale(1);
   cursor: pointer;
@@ -624,19 +624,19 @@
   cursor: pointer;
 }
 
-.starnav-login-signup {
+.starnav-about {
   position: absolute;
   left: 41px;
   top: -12px;
 } 
 
-.starnav-about {
+.starnav-beer {
   position: absolute; 
   left: 200px; 
   top: 12px;
 } 
 
-.starnav-beer {
+.starnav-cocktail {
   position: absolute;
   left: 280px; 
   top: 102px;
@@ -1524,19 +1524,19 @@ hr.lines {
     color: var(--white-dark);
   }
 
-  .starnav-login-signup {
+  .starnav-about {
     position: absolute;
     left: 214px;
     top: 73px;
   } 
   
-  .starnav-about {
+  .starnav-beer {
     position: absolute; 
     left: 278px; 
     top: 85px;
   } 
   
-  .starnav-beer {
+  .starnav-cocktail {
     position: absolute;
     left: 313px; 
     top: 131px;

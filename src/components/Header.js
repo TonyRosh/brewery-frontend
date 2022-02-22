@@ -40,6 +40,7 @@ function Header(props) {
                                 <NavDropdown title='Menu' id='collasible-nav-dropdown'>
                                     <NavDropdown.Item href='#beers' onClick={() => setToggleBeer(true)} >Beers</NavDropdown.Item>
                                     <NavDropdown.Item href='#food' onClick={() => setToggleBeer(false)} >Food</NavDropdown.Item>
+                                    <NavDropdown.Item href='#cocktails' onClick={() => setToggleBeer(true)} >Cocktails</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link href='#happy-hour'>Happy Hour</Nav.Link>
                                 <Nav.Link href='#team'>Team</Nav.Link>

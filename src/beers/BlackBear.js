@@ -8,8 +8,6 @@ function BlackBear(props) {
             props.history.goBack()
         }
 
-    console.log(props)
-
     let beerName = props.beers[1].name
     let beerDescription = props.beers[1].description
     let beerAbv = props.beers[1].alcohol

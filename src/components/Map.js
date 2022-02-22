@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function Map({setToggleBeer, history}) {
 
-    const [toggleLoginSignupStar, setToggleLoginSignupStar] = useState(false)
+    const [toggleCocktailStar, setToggleCocktailStar] = useState(false)
     const [toggleAboutStar, setToggleAboutStar] = useState(false)
     const [toggleBeersStar, setToggleBeersStar] = useState(false)
     const [toggleFoodStar, setToggleFoodStar] = useState(false)
@@ -10,16 +10,12 @@ function Map({setToggleBeer, history}) {
     const [toggleHappyHourStar, setToggleHappyHourStar] = useState(false)
     const [toggleContactStar, setToggleContactStar] = useState(false)
 
-    const handleClick = (event) => {
-        history.push('/login-signup')
-    }
-
     let coordinates = {}
 
     const desktopCoordinates = {
-        'Login-Signup': '158, 170, 50',
-        'About Us': '318, 198, 50',
-        'Beers': '398, 293, 50',
+        'About Us': '158, 170, 50',
+        'Beers': '318, 198, 50',
+        'Cocktails': '398, 293, 50',
         'Food': '491, 385, 50',
         'Team': '480, 505, 50',
         'happy-hour': '711, 445, 50',
@@ -27,9 +23,9 @@ function Map({setToggleBeer, history}) {
     }
 
     const tabletCoordinates = {
-        'Login-Signup': '130, 136, 45',
-        'About Us': '252, 158, 45',
-        'Beers': '315, 233, 45',
+        'About Us': '130, 136, 45',
+        'Beers': '252, 158, 45',
+        'Cocktails': '315, 233, 45',
         'Food': '390, 318, 45',
         'Team': '385, 420, 45',
         'happy-hour': '567, 365, 45',
@@ -37,9 +33,9 @@ function Map({setToggleBeer, history}) {
     }
 
     const mobileCoordinates = {
-        'Login-Signup': '65, 90, 30',
-        'About Us': '130, 100, 30',
-        'Beers': '160, 153, 30',
+        'About Us': '65, 90, 30',
+        'Beers': '130, 100, 30',
+        'Cocktails': '160, 153, 30',
         'Food': '200, 200, 30',
         'Team': '198, 263, 28',
         'happy-hour': '290, 225, 30',
@@ -63,28 +59,28 @@ function Map({setToggleBeer, history}) {
             <img src='https://i.imgur.com/n0vdV8Y.png' alt='big dipper' useMap='#starmap' className='big-dipper' />
             <map name='starmap' className='starmap'>
 
-                <area shape='circle' coords={coordinates['Login-Signup']} alt='Login-Signup' data-title='Login-Signup' className='star' onClick={handleClick} onMouseOver={ () => setToggleLoginSignupStar(true) } onMouseOut={ () => setToggleLoginSignupStar(false) } />
-                { toggleLoginSignupStar === false 
-                ?
-                <h5 className='starnav-login-signup'>Log In</h5>
-                :
-                <h5 id='star-nav-login-signup' className='starnav-login-signup'>Log In</h5>
-                }
-
                 <area shape='circle' coords={coordinates['About Us']} alt='About' href='#about' data-title='About Us' className='star' onMouseOver={ () => setToggleAboutStar(true) } onMouseOut={ () => setToggleAboutStar(false) } />
-                { toggleAboutStar === false
+                { toggleAboutStar === false 
                 ?
                 <h5 className='starnav-about'>About</h5>
                 :
                 <h5 id='star-nav-about' className='starnav-about'>About</h5>
                 }
 
-                <area shape='circle' coords={coordinates['Beers']} alt='Beers' href='#beers' data-title='Beers' className='star' onClick={() => setToggleBeer(true)} onMouseOver={ () => setToggleBeersStar(true) } onMouseOut={ () => setToggleBeersStar(false) } />
+                <area shape='circle' coords={coordinates['Beers']} alt='Beers' href='#beers' data-title='Beers' className='star' onMouseOver={ () => setToggleBeersStar(true) } onMouseOut={ () => setToggleBeersStar(false) } />
                 { toggleBeersStar === false
                 ?
                 <h5 className='starnav-beer'>Beers</h5>
                 :
                 <h5 id='star-nav-beer' className='starnav-beer'>Beers</h5>
+                }
+
+                <area shape='circle' coords={coordinates['Cocktails']} alt='Cocktails' href='#cocktails' data-title='Cocktails' className='star' onClick={() => setToggleCocktailStar(true)} onMouseOver={ () => setToggleCocktailStar(true) } onMouseOut={ () => setToggleCocktailStar(false) } />
+                { toggleCocktailStar === false
+                ?
+                <h5 className='starnav-cocktail'>Cocktails</h5>
+                :
+                <h5 id='star-nav-cocktail' className='starnav-cocktail'>Cocktails</h5>
                 }
 
                 <area shape='circle' coords={coordinates['Food']} alt='Food' href='#food' data-title='Food' className='star' onClick={() => setToggleBeer(false)} onMouseOver={ () => setToggleFoodStar(true) } onMouseOut={ () => setToggleFoodStar(false) } />

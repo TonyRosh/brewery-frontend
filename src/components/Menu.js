@@ -29,6 +29,17 @@ function Menu(props) {
         )
     })
 
+    let cocktails = () => props.cocktails.map(cocktail => {
+        return (
+            <div className='beer-item' data-aos='fade-up-right' data-aos-duration='800'>
+                <div className='beer-item-title'>
+                    <img src='https://i.imgur.com/ruhG4h9.jpg' alt='menu item thumbnail' />
+                    <h3 className='beer-name'>{cocktail}</h3>
+                </div>
+            </div>
+        )
+    })
+
     let snacks = () => props.foods.map(food => {
         if (food.description === 'Snacks') {
             return (
@@ -112,11 +123,26 @@ function Menu(props) {
                                 </div>
                             </div>
 
-                            <div className='row beer-tab-content' id='on-tap'>
-
-                                {beers()}
-
+                            <div className='row food-description' id='bottles'>
+                                <div><h2>Beers</h2></div>
                             </div>
+
+                            <div className='row beer-tab-content' id='on-tap'>
+                                {beers()}
+                            </div>
+
+                            <br />
+
+                            <div id="cocktails"><div className='row food-description' id='bottles'>
+                                <div> <p>Not a beer drinker?</p> <h2>Cocktails</h2></div>
+                            </div>
+
+                            <br />
+
+                            <div className='row beer-tab-content' id='on-tap'>
+                                {cocktails()}
+                            </div></div>
+
                         </div>
 
                         :

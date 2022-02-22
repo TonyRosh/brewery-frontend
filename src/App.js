@@ -34,6 +34,7 @@ function App() {
 
   const [beers, setBeers] = useState([]);
   const [foods, setFoods] = useState([]);
+  const [cocktails, setCocktails] = useState(['Margarita on the Rocks', 'Bloody Mary', 'Red Rocks Mule', 'Chocolate Martini', 'AK Old Fashioned', 'Classic Cosmo', 'PB&J', 'Martini']);
 
   const getBeers = () => {
     fetch('https://skybear-brewery-backend.herokuapp.com/beers')
@@ -79,16 +80,16 @@ function App() {
     <div className='App' >
 
 
-      <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} /> } />
-      <Route path='/welcome-back' render={(routerProps) => <UserHome {...routerProps} /> } />
+      <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} beers={ beers } /> } />
+      <Route path='/welcome-back' render={(routerProps) => <UserHome {...routerProps} beers={ beers } /> } />
       <Route path='/Black Bear' render={(routerProps) => <BlackBear {...routerProps} beers={ beers }/> } />
-      <Route path='/Black Fox' render={(routerProps) => <BlackFox {...routerProps} /> } />
-      <Route path='/Blonde Bear' render={(routerProps) => <BlondeBear {...routerProps} /> } />
-      <Route path='/Bobcat Lager' render={(routerProps) => <Bobcat {...routerProps} /> } />
-      <Route path='/Eagle Light' render={(routerProps) => <Eagle {...routerProps} /> } />
-      <Route path='/Nuthatch Brown' render={(routerProps) => <Nuthatch {...routerProps} /> } />
-      <Route path='/Red Fox' render={(routerProps) => <RedFox {...routerProps} /> } />
-      <Route path='/Rattlesnake' render={(routerProps) => <Rattlesnake {...routerProps} /> } />
+      <Route path='/Black Fox' render={(routerProps) => <BlackFox {...routerProps} beers={ beers } /> } />
+      <Route path='/Blonde Bear' render={(routerProps) => <BlondeBear {...routerProps} beers={ beers } /> } />
+      <Route path='/Bobcat Lager' render={(routerProps) => <Bobcat {...routerProps} beers={ beers } /> } />
+      <Route path='/Eagle Light' render={(routerProps) => <Eagle {...routerProps} beers={ beers } /> } />
+      <Route path='/Nuthatch Brown' render={(routerProps) => <Nuthatch {...routerProps} beers={ beers } /> } />
+      <Route path='/Red Fox' render={(routerProps) => <RedFox {...routerProps} beers={ beers } /> } />
+      <Route path='/Rattlesnake' render={(routerProps) => <Rattlesnake {...routerProps} beers={ beers } /> } />
 
     { areYou21 === true
 
@@ -127,7 +128,8 @@ function App() {
         toggleBeer={ toggleBeer } 
         setToggleBeer={ setToggleBeer } 
         beers={ beers } 
-        foods={ foods } 
+        foods={ foods }
+        cocktails={ cocktails }
       />}
       />
 
