@@ -19,7 +19,7 @@ function BlackBear(props) {
         <div className='black-bear'>
         <button onClick={previousPage} className='btn btn-leave-login' id='home-button' >Back</button>
             <h2 className="beer-page-title">{beerName} Milk Stout</h2>
-            <h5 className="black-bear-description">Just enough sweetness to keep the dark roast in check. Rich and robust, our Black Bear Milk Stout exhibits notes of dark chocolate, freshly brewed coffee, caramelized sugar and roasted malt.</h5>
+            <h5 className="black-bear-description">{beerDescription}</h5>
             <br/>
             <br/>
             <ul>
