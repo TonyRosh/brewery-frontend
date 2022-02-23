@@ -35,7 +35,7 @@ function About() {
                             data-aos-offset='300'
                             data-aos-easing='ease-in-sine' data-aos-duration='500'>
                             <div class='img-box' >
-                                <h3>Proudly Brewing Coloardo Beer</h3>
+                                <h3>Proudly Brewing Colorado Beer</h3>
                                 <Carousel autoPlay={true} 
                                 infiniteLoop={true}
                                 showArrows={false}
