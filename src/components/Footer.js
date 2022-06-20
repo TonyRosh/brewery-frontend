@@ -36,6 +36,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
+                    <div><h2>Sky Bear Brewery Will Be Opening Soon!</h2></div>
                     <div className='row'>
                         <div className='copyright'>
                             &copy; {new Date().getFullYear()} - Powered by CoffeeFreaks ☕️

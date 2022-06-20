@@ -48,13 +48,14 @@ function AreYou21(props) {
         <div className='no-scroll-bar'>
             <div id='progressbar'></div>
             <div className='are-you-21'>
-            <h2>Are You 21?!</h2>
-            <br />
+            <h1>Are You 21?!</h1>
             <button onClick={() => setAreYou21(areYou21)} className='btn-primary' > Yes! </button>
             <br />
             <br />
             <a href={ imJustABoy } className='btn-primary' target='_blank' rel='noopener noreferrer' id='not-21'> no :( </a>
             </div>
+            <br />
+            <h1>Sky Bear Brewery Will Be Opening Soon!</h1>
         </div>
         </div>
         </div>

@@ -6,6 +6,7 @@ function About() {
     return (
         <div>
             <section className='about-section sec-padding' id='about'>
+            <h1>Sky Bear Brewery Will Be Opening Soon!</h1>
                 <div className='container'>
                     <div className='row'>
                         <div className='section-title'>
