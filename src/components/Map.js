@@ -99,13 +99,13 @@ function Map({setToggleBeer, history}) {
                 <h5 id='star-nav-team' className='starnav-team'>Team</h5>
                 }
 
-                <area shape='circle' coords={coordinates['happy-hour']} alt='happy-hour' href='#happy-hour' data-title='happy-hour' className='star' onMouseOver={ () => setToggleHappyHourStar(true) } onMouseOut={ () => setToggleHappyHourStar(false) } />
+                {/* <area shape='circle' coords={coordinates['happy-hour']} alt='happy-hour' href='#happy-hour' data-title='happy-hour' className='star' onMouseOver={ () => setToggleHappyHourStar(true) } onMouseOut={ () => setToggleHappyHourStar(false) } />
                 { toggleHappyHourStar === false
                 ?
                 <h5 className='starnav-happy-hour'>Happy Hour</h5>
                 :
                 <h5 id='star-nav-happy-hour' className='starnav-happy-hour'>Happy Hour</h5>
-                }
+                } */}
 
                 <area shape='circle' coords={coordinates['Contact']} alt='Contact' href='#contact' data-title='Contact' className='star' onMouseOver={ () => setToggleContactStar(true) } onMouseOut={ () => setToggleContactStar(false) } />
                 { toggleContactStar === false
