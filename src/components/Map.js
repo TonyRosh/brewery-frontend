@@ -67,7 +67,7 @@ function Map({setToggleBeer, history}) {
                 <h5 id='star-nav-about' className='starnav-about'>About</h5>
                 }
 
-                <area shape='circle' coords={coordinates['Beers']} alt='Beers' href='#beers' data-title='Beers' className='star' onMouseOver={ () => setToggleBeersStar(true) } onMouseOut={ () => setToggleBeersStar(false) } />
+                {/* <area shape='circle' coords={coordinates['Beers']} alt='Beers' href='#beers' data-title='Beers' className='star' onMouseOver={ () => setToggleBeersStar(true) } onMouseOut={ () => setToggleBeersStar(false) } />
                 { toggleBeersStar === false
                 ?
                 <h5 className='starnav-beer'>Beers</h5>
@@ -89,7 +89,7 @@ function Map({setToggleBeer, history}) {
                 <h5 className='starnav-food'>Food</h5>
                 :
                 <h5 id='star-nav-food' className='starnav-food'>Food</h5>
-                }
+                } */}
 
                 <area shape='circle' coords={coordinates['Team']} alt='Team' href='#team' data-title='Team' className='star' onMouseOver={ () => setToggleTeamStar(true) } onMouseOut={ () => setToggleTeamStar(false) } />
                 { toggleTeamStar === false

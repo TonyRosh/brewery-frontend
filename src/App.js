@@ -80,7 +80,7 @@ function App() {
     <div className='App' >
 
 
-      <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} beers={ beers } /> } />
+      {/* <Route path='/login-signup' render={(routerProps) => <LoginSignup {...routerProps} beers={ beers } /> } />
       <Route path='/welcome-back' render={(routerProps) => <UserHome {...routerProps} beers={ beers } /> } />
       <Route path='/Black Bear' render={(routerProps) => <BlackBear {...routerProps} beers={ beers }/> } />
       <Route path='/Black Fox' render={(routerProps) => <BlackFox {...routerProps} beers={ beers } /> } />
@@ -89,7 +89,7 @@ function App() {
       <Route path='/Eagle Light' render={(routerProps) => <Eagle {...routerProps} beers={ beers } /> } />
       <Route path='/Nuthatch Brown' render={(routerProps) => <Nuthatch {...routerProps} beers={ beers } /> } />
       <Route path='/Red Fox' render={(routerProps) => <RedFox {...routerProps} beers={ beers } /> } />
-      <Route path='/Rattlesnake' render={(routerProps) => <Rattlesnake {...routerProps} beers={ beers } /> } />
+      <Route path='/Rattlesnake' render={(routerProps) => <Rattlesnake {...routerProps} beers={ beers } /> } /> */}
 
     { areYou21 === true
 
@@ -124,14 +124,14 @@ function App() {
 
       <About />
 
-      <Route render={(routerProps) => <Menu {...routerProps}
+      {/* <Route render={(routerProps) => <Menu {...routerProps}
         toggleBeer={ toggleBeer } 
         setToggleBeer={ setToggleBeer } 
         beers={ beers } 
         foods={ foods }
         cocktails={ cocktails }
       />}
-      />
+      /> */}
 
       {/* <HappyHour /> */}
 
