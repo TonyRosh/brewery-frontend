@@ -1022,7 +1022,7 @@ hr.lines {
   left: 1.87rem;
   right: 1.87rem;
   bottom: 0;
-  transform: translateY(-469%);
+  transform: translateY(-480%);
   transition: all 0.4s ease;
   pointer-events: none;
   z-index: -1;
@@ -1038,7 +1038,7 @@ hr.lines {
   left: 1.87rem;
   right: 1.87rem;
   bottom: 0;
-  transform: translateY(-592%);
+  transform: translateY(-600%);
   transition: all 0.4s ease;
   pointer-events: none;
   z-index: -1;
