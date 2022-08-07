@@ -24,7 +24,7 @@ function Footer() {
                         <div className='footer-item'>
                             <h3 data-aos='fade-up'>Contact Us</h3>
                             <div className='phone-div' data-aos='fade-up' data-aos-duration='1000'>
-                            <a className='phone' href="tel:630-651-0224">(630) 651-0224</a>
+                            <a className='phone' href="tel:970-744-6300">(970) 744-6300</a>
                             </div>
                             <br />
                             <div className='email-div' data-aos='fade-up' data-aos-duration='1200'>
