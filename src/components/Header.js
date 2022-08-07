@@ -37,6 +37,7 @@ function Header(props) {
                                 className='mr-auto my-2 my-lg-0'
                             >
                                 <Nav.Link href='#about'>About</Nav.Link>
+                                <Nav.Link href='#beers'>Menu</Nav.Link>
                                 {/* <NavDropdown title='Menu' id='collasible-nav-dropdown'> */}
                                     {/* <NavDropdown.Item href='#beers' onClick={() => setToggleBeer(true)} >Beers</NavDropdown.Item> */}
                                     {/* <NavDropdown.Item href='#food' onClick={() => setToggleBeer(false)} >Food</NavDropdown.Item> */}

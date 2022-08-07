@@ -13,13 +13,19 @@ function Team() {
                     </div>
                     <div className='row'>
 
-                        <div className='team-item'></div>
-
                         <div className='team-item' data-aos='flip-left' data-aos-duration='1000'>
                             <img src='https://i.imgur.com/BNmBjea.jpg' alt='brewer' />
-                            <div className='team-item-info'>
+                            <div className='team-item-info-fam'>
                                 <h3>The Kissel Family</h3>
                                 <p>We hope you enjoy your brews! <br /> - Mark, Linda, and Amanda.</p>
+                            </div>
+                        </div>
+
+                        <div className='team-item' data-aos='flip-left' data-aos-duration='1000'>
+                            <img src='https://i.imgur.com/My9aBDn.jpg' alt='brewer' />
+                            <div className='team-item-info-crew'>
+                                <h3>The Sky Bear Crew</h3>
+                                <p>Welcome to Sky Bear Brewery!</p>
                             </div>
                         </div>
 

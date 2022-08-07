@@ -57,7 +57,6 @@ function AreYou21(props) {
             <br />
         </div>
         </div>
-            <h2>Sky Bear Brewery Will Be Opening Soon!</h2>
         </div>
     )
 }

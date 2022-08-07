@@ -120,18 +120,16 @@ function App() {
         />}
       />
 
-
-
       <About />
 
-      {/* <Route render={(routerProps) => <Menu {...routerProps}
+      <Route render={(routerProps) => <Menu {...routerProps}
         toggleBeer={ toggleBeer } 
         setToggleBeer={ setToggleBeer } 
         beers={ beers } 
         foods={ foods }
         cocktails={ cocktails }
       />}
-      /> */}
+      />
 
       {/* <HappyHour /> */}
 
